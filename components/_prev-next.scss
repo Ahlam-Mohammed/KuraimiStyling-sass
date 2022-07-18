@@ -1,0 +1,25 @@
+@use "../utilities/_mixins/flex" as *;
+@use "../utilities/variables" as *;
+@use "../utilities/_mixins/font-size" as *;
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  @include flex(center, center);
+  a{
+    color: $secondary-light-color;
+    font-weight: bold;
+    @include font-size('xl');
+  }
+}
+
+.prev:hover{
+  background-image: linear-gradient(270deg, #7f71a526, transparent);
+  height: 300px;
+  margin: auto;
+}
+.next:hover{
+  background-image: linear-gradient(90deg, #7f71a526, transparent);
+  height: 300px;
+  margin: auto;
+}
