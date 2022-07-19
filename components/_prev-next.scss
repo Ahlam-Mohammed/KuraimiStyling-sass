@@ -12,14 +12,3 @@
     @include font-size('xl');
   }
 }
-
-.prev:hover{
-  background-image: linear-gradient(270deg, #7f71a526, transparent);
-  height: 300px;
-  margin: auto;
-}
-.next:hover{
-  background-image: linear-gradient(90deg, #7f71a526, transparent);
-  height: 300px;
-  margin: auto;
-}

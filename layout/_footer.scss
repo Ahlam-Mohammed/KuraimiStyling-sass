@@ -41,6 +41,7 @@ footer{
         gap: 2px;
       }
       color: $white;
+      margin-bottom: 20px;
       @include font-size('sm');
       .nav__title {
           font-weight: bold;
@@ -99,6 +100,30 @@ footer{
             @include font-size('2xl')
           }
         }
+        @include breakpoints('md') {
+          display: none;
+        }
+        @include breakpoints('sm') {
+          display: none;
+        }
+        @include breakpoints('') {
+          display: none;
+        }
+      }
+
+      @include breakpoints('sm') {
+        @include flex(center, space-between) {
+          flex-direction: column;
+          gap: 10px;
+        };
+        margin: 10px 0;
+      }
+      @include breakpoints('') {
+        @include flex(center, space-between) {
+          flex-direction: column;
+          gap: 10px;
+        };
+        margin-bottom: 10px;
       }
     }
 
@@ -115,6 +140,21 @@ footer{
     right: -158px;
     top: -60px;
     width: 34%;
+    @include breakpoints('md') {
+      right: -50px;
+      top: 0px;
+      width: 40%;
+    }
+    @include breakpoints('sm') {
+      right: -50px;
+      top: 0px;
+      width: 40%;
+    }
+    @include breakpoints('') {
+      right: -50px;
+      top: 0px;
+      width: 40%;
+    }
   }
 
   .bg-left {
@@ -123,5 +163,20 @@ footer{
     top: 37%;
     width: 39%;
     transform: scaleX(-1);
+    @include breakpoints('md') {
+      left: -128px;
+      top: 40%;
+      width: 45%;
+    }
+    @include breakpoints('sm') {
+      left: -128px;
+      top: 40%;
+      width: 45%;
+    }
+    @include breakpoints('') {
+      left: -128px;
+      top: 40%;
+      width: 45%;
+    }
   }
 }
