@@ -10,6 +10,14 @@
     background-size: cover;
     background-position: 0 4%;
     position: relative;
+    @include breakpoints('xxl') {
+        height: 900px;
+        background-position: center -119px;
+    }
+    @include breakpoints('xl') {
+        height: 900px;
+        background-position: center -119px;
+    }
     @include breakpoints('md') {
         height: 600px;
         background-position: center;
